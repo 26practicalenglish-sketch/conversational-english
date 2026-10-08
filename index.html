@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conversational English — Speak English. Feel confident.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav">
+  <div class="brand"><span class="bubble">•••</span><span>Conversational <b>English</b></span><small>Real English. Real Life.</small></div>
+  <nav>
+    <a class="active" href="#home">Home</a>
+    <a href="#learn">Learn</a>
+    <a href="#practice">Practice</a>
+    <a href="#real-english">Real English</a>
+    <a href="#progress">Progress</a>
+    <a href="#about">About</a>
+  </nav>
+  <button class="outline">Log In</button>
+  <button class="blue">Sign Up</button>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">REAL ENGLISH • REAL CONVERSATIONS</div>
+    <h1>Speak English.<br><span>Feel confident.</span><br>Be understood.</h1>
+    <p>Learn the English people actually use in real conversations — with practical lessons, speaking practice, and everyday situations.</p>
+    <div class="actions">
+      <a class="yellow btn" href="#learn">Start Learning →</a>
+      <a class="outline btn" href="#learn">Find Your Level</a>
+    </div>
+  </div>
+  <div class="hero-art">
+    <div class="sun"></div>
+    <div class="people">
+      <div class="person p1">👩🏻‍🦱</div><div class="person p2">🧑🏼</div><div class="person p3">👩🏼</div><div class="person p4">🧑🏾‍🦱</div>
+    </div>
+    <div class="scribble">Better conversations.<br>More confidence.<br>More opportunities.</div>
+  </div>
+</section>
+
+<section id="learn" class="section">
+  <div class="center">
+    <div class="eyebrow">CHOOSE YOUR PATH</div>
+    <h2>Find Your Level</h2>
+    <p>All levels are welcome. Start where you are and grow from there.</p>
+  </div>
+  <div class="levels">
+    <article class="level beginner">
+      <div class="icon">🌱</div><h3>Beginner</h3>
+      <p>Build your foundation and start speaking from day one.</p>
+      <button onclick="showMessage('Beginner lessons are coming next!')">Explore Beginner →</button>
+    </article>
+    <article class="level intermediate">
+      <div class="icon">🏔️</div><h3>Intermediate</h3>
+      <p>Speak more naturally, expand your vocabulary, and keep conversations going.</p>
+      <button onclick="showMessage('Intermediate lessons are coming next!')">Explore Intermediate →</button>
+    </article>
+    <article class="level advanced">
+      <div class="icon">👑</div><h3>Advanced</h3>
+      <p>Master nuance, confidence, fluency, and natural expressions.</p>
+      <button onclick="showMessage('Advanced lessons are coming next!')">Explore Advanced →</button>
+    </article>
+  </div>
+</section>
+
+<section id="real-english" class="conversation section">
+  <div class="topics">
+    <div class="eyebrow">LEARN THROUGH REAL LIFE</div>
+    <h2>Learn English through <span>real conversations.</span></h2>
+    <p>Forget boring word lists. Practice the situations you actually encounter in everyday life.</p>
+    <div class="topic-grid">
+      <div>☕<b>Small Talk</b></div><div>✈️<b>Travel</b></div><div>💼<b>Work</b></div>
+      <div>👋<b>Meeting People</b></div><div>🛍️<b>Everyday Life</b></div><div>🎯<b>Speaking Confidence</b></div>
+    </div>
+  </div>
+  <div id="practice" class="practice-card">
+    <div class="practice-title">💬 What would you say?</div>
+    <p class="question">Someone asks: <strong>“So, what do you do?”</strong></p>
+    <p class="hint">Choose a natural response and keep the conversation going.</p>
+    <button class="answer" onclick="answer(this, false)">A. I'm a teacher.</button>
+    <button class="answer" onclick="answer(this, true)">B. I work in marketing.</button>
+    <button class="answer" onclick="answer(this, false)">C. I'm just looking for a job.</button>
+    <button class="answer" onclick="answer(this, false)">D. I like to travel.</button>
+    <div id="feedback" class="feedback"></div>
+  </div>
+</section>
+
+<section class="section lesson-preview">
+  <div class="center">
+    <div class="eyebrow">A REAL LESSON</div>
+    <h2>Connected Speech: <span>“at the”</span></h2>
+    <p>Help students understand how words connect in natural English.</p>
+  </div>
+  <div class="lesson">
+    <div>
+      <span class="lesson-label">LISTEN & REPEAT</span>
+      <h3>Say the words separately — then together.</h3>
+      <div class="phrase-row">
+        <div><b>at</b><small>/æt/</small></div><div class="plus">+</div>
+        <div><b>the</b><small>/ðə/</small></div><div class="arrow">→</div>
+        <div class="joined"><b>at the</b><small>/ət ðə/</small></div>
+      </div>
+      <button class="blue btn" onclick="speakPhrase()">🔊 Listen</button>
+    </div>
+    <div class="tip">
+      <h3>💡 Practice tip</h3>
+      <p>Don't put a big pause between the words. Start slowly, then gradually make the phrase more natural.</p>
+    </div>
+  </div>
+</section>
+
+<section id="progress" class="progress section">
+  <div><div class="eyebrow">YOUR JOURNEY</div><h2>Small steps. Big progress.</h2><p>Track lessons, vocabulary, and speaking practice as your students grow.</p></div>
+  <div class="meter"><strong>Sample student progress</strong><div class="bar"><span></span></div><b>60%</b></div>
+</section>
+</main>
+
+<footer id="about">
+  <div><strong>Conversational English</strong><br><span>Real English. Real Life.</span></div>
+  <div>Your English. <b>Your Future.</b></div>
+</footer>
+
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
